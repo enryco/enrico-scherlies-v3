@@ -1,0 +1,31 @@
+.es-header {
+  background: $grey;
+  padding: 20px 10px 10px 10px;
+  transform: skewY(-6deg) translateY(0px);
+  transform-origin: left top;
+
+  &__logo {
+    transform: skewY(6deg);
+    transform-origin: left top;
+  }
+
+
+  &__title {
+    color: $white;
+    font-family: Roboto Condensed, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__filter-item {
+    color: $black;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    cursor: pointer;
+  }
+}
