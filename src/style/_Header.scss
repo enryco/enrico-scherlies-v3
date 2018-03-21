@@ -1,4 +1,8 @@
 .es-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
   background: $grey;
   padding: 20px 10px 10px 10px;
   transform: skewY(-6deg) translateY(0px);
@@ -8,7 +12,6 @@
     transform: skewY(6deg);
     transform-origin: left top;
   }
-
 
   &__title {
     color: $white;
@@ -20,12 +23,16 @@
 
   &__filter-item {
     color: $black;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none;
+    // -webkit-touch-callout: none; /* iOS Safari */
+    // -webkit-user-select: none; /* Safari */
+    // -khtml-user-select: none; /* Konqueror HTML */
+    // -moz-user-select: none; /* Firefox */
+    // -ms-user-select: none; /* Internet Explorer/Edge */
+    // user-select: none;
     cursor: pointer;
+
+    // &:hover {
+    //   text-decoration: underline;
+    // }
   }
 }
