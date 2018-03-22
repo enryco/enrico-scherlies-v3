@@ -29,12 +29,9 @@ class App extends Component {
       }
     }
     request(options, (error, response, body) => {
-      console.log(body)
       if (body) {
         const gistsRaw = JSON.parse(body)
         const gists = _.map(gistsRaw, gist => this.formatGists(gist))
-        console.log(gists)
-
         this.setState({ gists })
       }
 
