@@ -3,15 +3,13 @@ import Logo from './Logo'
 import _ from 'lodash'
 
 class Header extends Component {
-
   state = {
-    categories: [
-      'projects',
-      'gists',
-      'contact'
-    ]
+    labels: {
+      'project': 'projects',
+      'gist': 'gists',
+      'contact': 'contact'
+    }
   }
-
   render() {
 
     return (
@@ -22,11 +20,19 @@ class Header extends Component {
         <div className="es-header__title-wrapper">
 
           <div className="es-header__title">
-            <div>
-              filter:
-          </div>
+            <div className="es-header__filter-item" onClick={e => this.props.handleFilterClick('all')} >
+              <div>
+                filter:
+              </div>
+            </div>
             {
-              _.map(this.state.categories, (category, key) => <FilterItem key={key} text={category} />)
+              _.map(this.props.categories, (category, key) => <FilterItem
+                key={key}
+                category={category}
+                label={category && this.state.labels[category] || category}
+                handleFilterClick={this.props.handleFilterClick}
+                isActive={this.props.filter === category}
+              />)
             }
           </div>
         </div>
@@ -38,8 +44,10 @@ class Header extends Component {
 export default Header
 
 
-const FilterItem = props => (<div className="es-header__filter-item" onClick={() => console.log('clicked')} >
+const FilterItem = props => (<div
+  className={`es-header__filter-item ${props.isActive ? 'es-header__filter-item--active' : null}`}
+  onClick={e => props.handleFilterClick(props.category)} >
   <div>
-    {'  ' + props.text}
+    {'  ' + props.label}
   </div>
 </div>)

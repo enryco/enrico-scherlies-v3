@@ -8,6 +8,7 @@
   transform: skewY(-6deg) translateY(0px);
   transform-origin: left top;
   transform-style: preserve-3D;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
   &__logo {
     transform: skewY(6deg);
@@ -16,6 +17,7 @@
 
   &__title-wrapper {
     transform: skewY(6deg); // undo the skew — otherwise it would fuck up the click target area
+
   }
 
   &__title {
@@ -32,6 +34,11 @@
   }
 
   &__filter-item {
+
+    &:first-of-type {
+      color: $white;
+    }
+
     margin-left: 5px;
     color: $black;
     display: flex;
@@ -47,6 +54,10 @@
     cursor: pointer;
 
     &:hover {
+      text-decoration: underline;
+    }
+
+    &--active {
       text-decoration: underline;
     }
   }

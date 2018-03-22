@@ -12,6 +12,12 @@ class App extends Component {
     projects: content.entries,
     gists: null,
     showOnly: 0,
+    categories: [
+      'project',
+      'gist',
+      'contact'
+    ],
+    filter: 'all',
   }
 
   componentDidMount() {
@@ -57,10 +63,19 @@ class App extends Component {
     posts = _.concat(posts, state.projects)
     posts = _.concat(posts, state.gists)
 
-    // filter for date
+    // filter
+    if (state.filter !== 'all') {
+      posts = _.filter(posts, post => post.type === state.filter)
+    }
+
+    // sort date
     posts = _.reverse(_.sortBy(posts, 'date'))
 
     return posts
+  }
+
+  handleFilterClick = filter => {
+    this.setState({ filter })
   }
 
   render() {
@@ -68,7 +83,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header />
+        <Header
+        categories={this.state.categories}
+        filter={this.state.filter}
+        handleFilterClick={this.handleFilterClick} />
         {
           posts && <Content
             posts={posts}

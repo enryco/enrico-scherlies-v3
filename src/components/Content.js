@@ -4,15 +4,10 @@ import _ from 'lodash'
 
 class Content extends Component {
 
-  state = {}
-
   render() {
     const {
       posts,
     } = this.props
-
-    console.log(posts)
-
 
     return (
       <div className="es-content">
