@@ -36,7 +36,7 @@ class Header extends Component {
               _.map(this.props.categories, (category, key) => <FilterItem
                 key={key}
                 category={category}
-                label={category && this.state.labels[category] || category}
+                label={category && (this.state.labels[category] ? this.state.labels[category] : category)}
                 handleFilterClick={this.props.handleFilterClick}
                 isActive={this.props.filter === category}
               />)
