@@ -8,9 +8,7 @@ const Logo = props => {
   return (
     <div
       style={{ height: 50, width: 65}}
-      className="es-logo"
-      }
-      >
+      className="es-logo">
       <img
         className="es-logo__img"
         src={logo}
