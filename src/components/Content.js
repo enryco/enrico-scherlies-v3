@@ -5,12 +5,11 @@ import _ from 'lodash'
 class Content extends Component {
 
   render() {
-    const {
-      posts,
-    } = this.props
+
+    const { posts, contentOffset} = this.props
 
     return (
-      <div className="es-content">
+      <div className="es-content" style={{ marginTop: contentOffset }}>
         {
           _.map(posts, (post, key) => {
             // TOOD logic to handle different psot types

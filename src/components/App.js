@@ -18,6 +18,7 @@ class App extends Component {
       'contact'
     ],
     filter: 'all',
+    contentOffset: 0,
   }
 
   componentDidMount() {
@@ -80,15 +81,17 @@ class App extends Component {
 
   render() {
     const posts = this.handlePosts()
-
     return (
       <div className="App">
         <Header
-        categories={this.state.categories}
-        filter={this.state.filter}
-        handleFilterClick={this.handleFilterClick} />
+          categories={this.state.categories}
+          filter={this.state.filter}
+          handleFilterClick={this.handleFilterClick}
+          setContentOffset={contentOffset => this.setState({contentOffset})}
+          />
         {
           posts && <Content
+            contentOffset={this.state.contentOffset}
             posts={posts}
           />
         }

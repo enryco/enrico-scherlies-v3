@@ -10,10 +10,15 @@ class Header extends Component {
       'contact': 'contact'
     }
   }
+
+  componentDidMount() {
+    this.props.setContentOffset(this.header.clientHeight)
+  }
+
   render() {
 
     return (
-      <div className="es-header">
+      <div className="es-header" ref={element => this.header = element} >
         <div className="es-header__logo" >
           <Logo />
         </div>
