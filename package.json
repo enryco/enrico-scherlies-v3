@@ -1,5 +1,6 @@
 {
   "name": "enrico-scherlies-v3",
+  "homepage": "https://www.enricoscherlies.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
