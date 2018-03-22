@@ -7,10 +7,15 @@
   padding: 20px 10px 10px 10px;
   transform: skewY(-6deg) translateY(0px);
   transform-origin: left top;
+  transform-style: preserve-3D;
 
   &__logo {
     transform: skewY(6deg);
     transform-origin: left top;
+  }
+
+  &__title-wrapper {
+    transform: skewY(6deg); // undo the skew — otherwise it would fuck up the click target area
   }
 
   &__title {
@@ -19,20 +24,30 @@
     font-style: italic;
     font-weight: 700;
     font-size: 24px;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    transform: skewY(-6deg);
   }
 
   &__filter-item {
+    margin-left: 5px;
     color: $black;
-    // -webkit-touch-callout: none; /* iOS Safari */
-    // -webkit-user-select: none; /* Safari */
-    // -khtml-user-select: none; /* Konqueror HTML */
-    // -moz-user-select: none; /* Firefox */
-    // -ms-user-select: none; /* Internet Explorer/Edge */
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+
+    // -webkit-touch-callout: none; /* iOS Safari
+    // -webkit-user-select: none; /* Safari
+    // -khtml-user-select: none; /* Konqueror HTML
+    // -moz-user-select: none; /* Firefox
+    // -ms-user-select: none; /* Internet Explorer/Edge
     // user-select: none;
     cursor: pointer;
 
-    // &:hover {
-    //   text-decoration: underline;
-    // }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

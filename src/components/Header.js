@@ -19,13 +19,16 @@ class Header extends Component {
         <div className="es-header__logo" >
           <Logo />
         </div>
-        <div className="es-header__title">
-          <span>
-            filter:
-          </span>
-          {
-            _.map(this.state.categories, (category, key) => <FilterItem key={key} text={category} />)
-          }
+        <div className="es-header__title-wrapper">
+
+          <div className="es-header__title">
+            <div>
+              filter:
+          </div>
+            {
+              _.map(this.state.categories, (category, key) => <FilterItem key={key} text={category} />)
+            }
+          </div>
         </div>
       </div>
     )
@@ -35,4 +38,8 @@ class Header extends Component {
 export default Header
 
 
-const FilterItem = props => <span className="es-header__filter-item">{' ' + props.text}</span>
+const FilterItem = props => (<div className="es-header__filter-item" onClick={() => console.log('clicked')} >
+  <div>
+    {'  ' + props.text}
+  </div>
+</div>)
