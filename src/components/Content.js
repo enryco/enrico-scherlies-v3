@@ -9,7 +9,6 @@ class Content extends Component {
   render() {
     const {
       posts,
-      wpCategoryNames
     } = this.props
 
 
@@ -22,9 +21,9 @@ class Content extends Component {
 
             return <Entry
               key={key}
-              title={post.title.rendered}
-              type={wpCategoryNames[post.categories[0]]}
-              content={post.content.rendered}
+              title={post.title}
+              type={post.type}
+              content={post.content}
             />
           })
         }
