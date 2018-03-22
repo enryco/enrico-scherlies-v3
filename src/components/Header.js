@@ -25,11 +25,13 @@ class Header extends Component {
         <div className="es-header__title-wrapper">
 
           <div className="es-header__title">
-            <div className="es-header__filter-item" onClick={e => this.props.handleFilterClick('all')} >
-              <div>
-                filter:
-              </div>
-            </div>
+            <FilterItem
+              key={0}
+              category={'all'}
+              label={'filter:'}
+              handleFilterClick={this.props.handleFilterClick}
+              isActive={this.props.filter === 'all'}
+            />
             {
               _.map(this.props.categories, (category, key) => <FilterItem
                 key={key}
