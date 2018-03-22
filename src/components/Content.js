@@ -9,7 +9,7 @@ class Content extends Component {
     const { posts, contentOffset} = this.props
 
     return (
-      <div className="es-content" style={{ marginTop: contentOffset }}>
+      <div className="es-content" style={{ paddingTop: contentOffset + 10 }}>
         {
           _.map(posts, (post, key) => {
             // TOOD logic to handle different psot types

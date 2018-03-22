@@ -1,0 +1,13 @@
+.es-app {
+  // max-width: 425px;
+  background: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 630px) {
+  .es-app {
+    margin-left: calc(50vw - 630px / 2);
+    width: 630px;
+  }
+}

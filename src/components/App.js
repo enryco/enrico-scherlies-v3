@@ -82,7 +82,7 @@ class App extends Component {
   render() {
     const posts = this.handlePosts()
     return (
-      <div className="App">
+      <div className="es-app">
         <Header
           categories={this.state.categories}
           filter={this.state.filter}

@@ -34,13 +34,12 @@
   }
 
   &__filter-item {
-
     &:first-of-type {
       color: $white;
     }
 
     margin-left: 5px;
-    color: $black;
+    color: $darkwood;
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
@@ -60,5 +59,12 @@
     &--active {
       text-decoration: underline;
     }
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .es-header {
+    left: calc(50vw - 630px / 2);
+    width: 610px;
   }
 }

@@ -5,14 +5,14 @@
     //...
     font-family: RobotoCondensed-BoldItalic;
     font-size: 36px;
-    color: #00369C;
+    color: $primary;
   }
 
   &__subtitle {
     //...
     font-family: RobotoCondensed-BoldItalic;
     font-size: 18px;
-    color: #3E3E3E;
+    color: $darkwood;
     text-align: center;
   }
 
