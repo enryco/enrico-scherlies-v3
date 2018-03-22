@@ -2,7 +2,7 @@ const content = {
   entries: [{
     title: 'kibo',
     type: 'project',
-    date: '2018-03-22T12:00:00',
+    date: '2018-03-10T12:00:00',
     content: `<div>2017 - current</div>
       <div><a href="http://kitabote.de">{kitabote.de}</a></div>
       <div>plattform: iOS, Android, Web App</div>
@@ -12,7 +12,7 @@ const content = {
   {
     title: 'ela crain',
     type: 'project',
-    date: '2018-03-22T12:00:00',
+    date: '2018-03-10T12:00:00',
     content: `<div>2017 - current</div>
       <div><a href="http://elacrain.com">{elacrain.com}</a></div>
       <div>plattform: web app</div> <div>ela crain's personal website for coaching and writing</div>
@@ -21,7 +21,7 @@ const content = {
   {
     title: 'bonnie & byte',
     type: 'project',
-    date: '2018-03-22T12:00:00',
+    date: '2018-03-10T12:00:00',
     content: `<div>currently under development</div>
       <div><a href="http://bonniebyte.com">{bonniebyte.com}</a></div>
       <div>bonny & byte berlin is a web agency with strong skills in wordpress and design</div>
@@ -30,7 +30,7 @@ const content = {
   {
     title: 'free bugs',
     type: 'project',
-    date: '2018-03-22T12:00:00',
+    date: '2018-03-10T12:00:00',
     content: `<div>2017</div>
       <div><a href="http://enricoscherlies.com/freeBugs">{free bugs}</a></div>
       <div>project for the {<a href="https://codingdavinci.de/">coding da vinci</a>} hackathon</div>
@@ -39,7 +39,7 @@ const content = {
   {
     title: 'mh hub',
     type: 'project',
-    date: '2018-03-22T12:00:00',
+    date: '2018-03-10T12:00:00',
     content: `<div>2017 - present</div>
       <div><a href="http://mhhub.org/">{mh hub}</a></div>
       <div>i am supporting the mh hub with questions regardign tech. we will eventually build a plattform with more features</div>`,
@@ -47,7 +47,7 @@ const content = {
   {
     title: 'tc',
     type: 'project',
-    date: '2018-03-22T12:00:00',
+    date: '2018-03-10T12:00:00',
     content: `<div>2017 - present</div>
       <div>{to be announced}</div>
       <div>plattform: iOS, Android, Web App</div>

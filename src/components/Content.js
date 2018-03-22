@@ -11,13 +11,15 @@ class Content extends Component {
       posts,
     } = this.props
 
+    console.log(posts)
+
 
     return (
       <div className="es-content">
         {
           _.map(posts, (post, key) => {
             // TOOD logic to handle different psot types
-            console.log(post)
+            if (!post) return null
 
             return <Entry
               key={key}
@@ -38,7 +40,7 @@ export default Content
 const Entry = props => (<div className="es-entry">
   <div className="es-entry__title">{props.title}
     <span className="es-entry__subtitle">
-      {' ' + props.type}
+      {' —' + props.type}
     </span>
   </div>
   <div className="es-entry__content" dangerouslySetInnerHTML={{ __html: props.content }}>
