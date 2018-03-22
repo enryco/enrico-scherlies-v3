@@ -19,7 +19,7 @@ class Header extends Component {
 
     return (
       <div className="es-header" ref={element => this.header = element} >
-        <div className="es-header__logo" >
+        <div className="es-header__logo" onClick={e => this.props.handleFilterClick('all')}>
           <Logo />
         </div>
         <div className="es-header__title-wrapper">

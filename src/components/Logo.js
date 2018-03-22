@@ -7,8 +7,11 @@ const Logo = props => {
   const { img } = props
   return (
     <div
-      style={{ height: 50 }}
-      className="es-logo">
+      style={{ height: 50, width: 65}}
+      className="es-logo"
+      onClick={() => console.log('clieckt')
+      }
+      >
       <img
         className="es-logo__img"
         src={logo}
