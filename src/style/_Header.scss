@@ -34,12 +34,13 @@
   }
 
   &__filter-delim {
-    color: $header;
+    color: $grey;
     margin-left: 8px;
     margin-right: 8px;
   }
 
   &__filter-item {
+    color: $header;
     // &:first-of-type {
     //   cursor: inherit;
 
