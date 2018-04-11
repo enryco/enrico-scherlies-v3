@@ -53,7 +53,7 @@ export default Header
 
 const FilterItem = props => (<div onClick={e => props.handleFilterClick(props.category)} >
   <div>
-    {props.category === 'all' ? null : <span className="es-header__filter-delim">-></span>}
+    {props.category === 'all' ? null : <span className="es-header__filter-delim">~</span>}
     <span className={`es-header__filter-item ${props.isActive ? 'es-header__filter-item--active' : null}`}>
       {props.label}
     </span>
