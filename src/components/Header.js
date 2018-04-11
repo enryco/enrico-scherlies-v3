@@ -25,10 +25,11 @@ class Header extends Component {
         <div className="es-header__title-wrapper">
 
           <div className="es-header__title">
+            <span className="es-header__filter-item">show:</span>
             <FilterItem
               key={0}
               category={'all'}
-              label={'filter:'}
+              label={'all'}
               handleFilterClick={this.props.handleFilterClick}
               isActive={this.props.filter === 'all'}
             />
@@ -51,10 +52,11 @@ class Header extends Component {
 export default Header
 
 
-const FilterItem = props => (<div
-  className={`es-header__filter-item ${props.isActive ? 'es-header__filter-item--active' : null}`}
-  onClick={e => props.handleFilterClick(props.category)} >
+const FilterItem = props => (<div onClick={e => props.handleFilterClick(props.category)} >
   <div>
-    {'  ' + props.label}
+    <span className="es-header__filter-delim">{props.category === 'all' ? '' : '~'}</span>
+    <span className={`es-header__filter-item ${props.isActive ? 'es-header__filter-item--active' : null}`}>
+      {props.label}
+    </span>
   </div>
 </div>)

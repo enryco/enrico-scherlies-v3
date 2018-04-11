@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   width: 100vw;
-  background: $grey;
+  background: $secondary;
   padding: 20px 10px 10px 10px;
   transform: skewY(-6deg) translateY(0px);
   transform-origin: left top;
@@ -21,7 +21,7 @@
   }
 
   &__title {
-    color: $white;
+    color: $grey;
     font-family: Roboto Condensed, sans-serif;
     font-style: italic;
     font-weight: 700;
@@ -33,23 +33,21 @@
     transform: skewY(-6deg);
   }
 
+  &__filter-delim {
+    color: $grey;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
   &__filter-item {
     &:first-of-type {
-      color: $white;
+      cursor: inherit;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
-    margin-left: 5px;
-    color: $darkwood;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
-
-    // -webkit-touch-callout: none; /* iOS Safari
-    // -webkit-user-select: none; /* Safari
-    // -khtml-user-select: none; /* Konqueror HTML
-    // -moz-user-select: none; /* Firefox
-    // -ms-user-select: none; /* Internet Explorer/Edge
-    // user-select: none;
     cursor: pointer;
 
     &:hover {
