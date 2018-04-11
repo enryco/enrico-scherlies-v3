@@ -40,13 +40,13 @@
   }
 
   &__filter-item {
-    &:first-of-type {
-      cursor: inherit;
+    // &:first-of-type {
+    //   cursor: inherit;
 
-      &:hover {
-        text-decoration: none;
-      }
-    }
+    //   &:hover {
+    //     text-decoration: none;
+    //   }
+    // }
 
     cursor: pointer;
 
