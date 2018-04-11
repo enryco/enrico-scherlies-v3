@@ -15,7 +15,7 @@ class App extends Component {
     categories: [
       'project',
       'gist',
-      'contact'
+      'about'
     ],
     filter: 'all',
     contentOffset: 0,

@@ -68,15 +68,15 @@ const content = {
       <div>this project is a startup in the health sector — will hit production late this year (2018) so stay tuned</div>`,
   },
   {
-    title: 'about',
-    type: 'contact',
+    title: 'me',
+    type: 'about',
     date: '2222-01-01T12:00:00',
     content: `<div>After studying mechanical engineering i decided to specialize in programming, building software products and becoming an entrepreneur.</div>
     <div>I love solving complex problems and developing products.</div>`
   },
   {
     title: 'contact',
-    type: 'contact',
+    type: 'about',
     date: '2017-03-22T12:00:00',
     content: `<div>Enrico Scherlies</div>
     <div><a href="mailto:contact@enricoscherlies.com">contact@enricoscherlies.com</a></div>
