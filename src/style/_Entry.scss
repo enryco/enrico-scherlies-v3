@@ -4,19 +4,17 @@
   &__title {
     //...
     font-family: Roboto Condensed, sans-serif;
-    font-style: italic;
     font-weight: 700;
-    font-size: 36px;
-    color: $primary;
+    font-size: 28px;
+    color: $grey;
   }
 
   &__subtitle {
     //...
     font-family: Roboto Condensed, sans-serif;
-    font-style: italic;
     font-weight: 700;
     font-size: 18px;
-    color: $grey;
+    color: $primary;
     text-align: center;
   }
 
