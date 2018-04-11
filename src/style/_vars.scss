@@ -1,14 +1,21 @@
 // colors
-$primary: #31E981;
-$secondary: #A53860;
-$black: #172A3A;
-$white: #FDFCFD;
-$grey: #542A8C;
+$primary: #ffffff;
+$secondary: rgb(17, 207, 134);
+$black: #343844;
+$grey: #818D92;
+$white: #F3F3F3;
 
-$link: #CA7DF9;
-$app-background: $white;
-$background: $grey;
+// header
 $header: $primary;
+$header-background: $secondary;
+
+// list
+$title: $black;
+$link: $secondary;
+$app-background: $white;
+
+// desktop bg
+$background: #E1E1E0;
 
 // animation
 $animation-duration: 0.4s;
