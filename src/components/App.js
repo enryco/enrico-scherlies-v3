@@ -13,6 +13,7 @@ class App extends Component {
     gists: null,
     showOnly: 0,
     categories: [
+      'news',
       'project',
       'gist',
       'about'
