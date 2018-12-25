@@ -11,7 +11,8 @@
   "devDependencies": {
     "node-sass-chokidar": "^1.2.0",
     "npm-run-all": "^4.1.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "react-snap": "^1.23.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
@@ -19,7 +20,8 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js && cp -a ./build/. ./hosting/",
+    "build": "npm-run-all build-css build-js",
+    "postbuild": "react-snap",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
