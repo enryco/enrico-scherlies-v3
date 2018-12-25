@@ -7,7 +7,8 @@ const content = {
       content: `<div>Herbst 2018</div>
       <div><a href="http://http://www.juniorlab.de/">{http://www.juniorlab.de/}</a></div>
       <cite>CCK: Creative Coding Kids <br/><br/>Wir bringen Computern das Zählen von 1 bis 100 bei und bauen uns mit Loops, Variablen und Funktionen eigene kleine spielerische Aufgaben. (Coach: Enrico Scherlies)</cite>
-      `
+      `,
+      image: `${process.env.PUBLIC_URL}/assets/juniorlab.jpeg`
     },
     {
       title: 'WORKSHOP: Circular Coding @OSCEdays',
@@ -16,7 +17,8 @@ const content = {
       content: `<div>14. - 16. June 2018</div>
       <div><a href="http://2018.oscedays.berlin/">{2018.oscedays.berlin}</a></div>
       <div>At the OSCEdays 2018 in Berlin I will give a workshop about: <br/> <strong>Circular Coding</strong> — learn about the roots of open source, how you can use coding as a superpower and let's explore how software can make an positive impact</div>
-      `
+      `,
+      image: `${process.env.PUBLIC_URL}/assets/osce-days.png`
     },
     {
       title: 'WORKSHOP: Building a Sustainability Gaming App! @OSCEdays ',
@@ -25,7 +27,8 @@ const content = {
       content: `<div>14. - 16. June 2018</div>
       <div><a href="http://2018.oscedays.berlin/">{2018.oscedays.berlin}</a></div>
       <div>Together with <a href="http://www.refashionrefood.org/">{refashionrefood}</a> we will develop an app prototype!</div>
-      `
+      `,
+      image: `${process.env.PUBLIC_URL}/assets/osce-days.png`
     },
     {
       title: 'chat for 3000+ people',
@@ -35,7 +38,7 @@ const content = {
       <div><a href="https://react-firebase-chat-app-demo.firebaseapp.com">{~ DEMO ~}</a></div>
       <div>plattform: react web app integrated in a wordpress membership site</div>
       <div>tech: react, firebase</div>
-      <div>A custom chat solution for a client which is scalable (buzzwordalert!), can support at minimum 3000 people chatting in a groupchat (yes, like the twitch or youtube chats)</div>`
+      <div>A custom chat solution for a client which is scalable, can support at minimum 3000 people chatting in a groupchat (yes, like the twitch or youtube chats)</div>`
     },
     {
       title: 'open tech school-web frontend co-learning co-host',
@@ -43,7 +46,8 @@ const content = {
       date: '2018-04-03T12:00:00',
       content: `<div>2018</div>
       <div><a href="https://www.meetup.com/opentechschool-berlin/events/">{open tech school meetups}</a></div>
-      <div>im happy to support the open tech school web-frontend co-learning meetup occuring every wednesday in organizational matters</div>`
+      <div>im happy to support the open tech school web-frontend co-learning meetup occuring every wednesday in organizational matters</div>`,
+      image: `${process.env.PUBLIC_URL}/assets/open-tech-school.png`
     },
     {
       title: 'kibo',
@@ -53,7 +57,8 @@ const content = {
       <div><a href="http://kitabote.de">{kitabote.de}</a></div>
       <div>plattform: iOS, Android, Web App</div>
       <div>tech: react, react native, firebase, javascript, html/css</div>
-      <div>kitabote is a communications app for child daycares: for parents and daycare managers</div>`
+      <div>kitabote is a communications app for child daycares: for parents and daycare managers</div>`,
+      image: `${process.env.PUBLIC_URL}/assets/kibo.png`
     },
     {
       title: 'ela crain',
@@ -87,13 +92,14 @@ const content = {
       image: `${process.env.PUBLIC_URL}/assets/free-bugs.png`
     },
     {
-      title: 'mh hub',
+      title: 'mh hive',
       type: 'project',
       date: '2018-02-10T12:00:00',
-      content: `<div>2017 - present</div>
-      <div><a href="http://mhhub.org/">{mh hub}</a></div>
-      <div>i am building a research charing plattform for them.</div>
-      <div>i also consult and maintain the tech at mhhub</div>`,
+      content: `<div>2018</div>
+      <div><a href="http://mhhub.org/hive">{mh hive}</a></div>
+      <div>the hive is a research plattform for the menstrual health hub</div>
+      <div>Build with Airtable, React + Firebase</div>`,
+      image: `${process.env.PUBLIC_URL}/assets/mhhive.png`
     },
     {
       title: 'tc',

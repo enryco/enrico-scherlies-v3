@@ -45,7 +45,7 @@ const Entry = props => (<div className="es-entry">
     {
       props.image &&
       <div style={{ flex: 1 }}>
-        <img style={{ borderRadius: 0, width: "100px", float: "right", }} src={props.image} alt="" />
+        <img style={{ borderRadius: 0, width: "120px", float: "right", objectFit: 'contain' }} src={props.image} alt="" />
       </div>
     }
   </div>
