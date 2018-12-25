@@ -6,7 +6,7 @@ class Content extends Component {
 
   render() {
 
-    const { posts, contentOffset} = this.props
+    const { posts, contentOffset } = this.props
 
     return (
       <div className="es-content" style={{ paddingTop: contentOffset + 10 }}>
@@ -20,6 +20,7 @@ class Content extends Component {
               title={post.title}
               type={post.type}
               content={post.content}
+              image={post.image}
             />
           })
         }
@@ -37,6 +38,15 @@ const Entry = props => (<div className="es-entry">
       {' —' + props.type}
     </span>
   </div>
-  <div className="es-entry__content" dangerouslySetInnerHTML={{ __html: props.content }}>
+  <div style={{ display: 'flex' }}>
+    <div style={{ flex: 2 }}>
+      <div className="es-entry__content" dangerouslySetInnerHTML={{ __html: props.content }} />
+    </div>
+    {
+      props.image &&
+      <div style={{ flex: 1 }}>
+        <img style={{ borderRadius: 0, width: "100px", float: "right", }} src={props.image} alt="" />
+      </div>
+    }
   </div>
 </div>)

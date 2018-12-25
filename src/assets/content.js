@@ -1,6 +1,15 @@
 const content = {
   entries: [
     {
+      title: 'Coach @ JuniorLab',
+      type: 'news',
+      date: '2018-11-2T12:00:00',
+      content: `<div>Herbst 2018</div>
+      <div><a href="http://http://www.juniorlab.de/">{http://www.juniorlab.de/}</a></div>
+      <cite>CCK: Creative Coding Kids <br/><br/>Wir bringen Computern das Zählen von 1 bis 100 bei und bauen uns mit Loops, Variablen und Funktionen eigene kleine spielerische Aufgaben. (Coach: Enrico Scherlies)</cite>
+      `
+    },
+    {
       title: 'WORKSHOP: Circular Coding @OSCEdays',
       type: 'news',
       date: '2018-04-10T12:00:00',
@@ -69,10 +78,13 @@ const content = {
       title: 'free bugs',
       type: 'project',
       date: '2018-02-10T12:00:00',
-      content: `<div>2017</div>
-      <div><a href="http://enricoscherlies.com/freeBugs">{free bugs}</a></div>
-      <div>project for the <a href="https://codingdavinci.de/">{coding da vinci}</a> hackathon</div>
-      <div>tech: react</div>`,
+      content: `
+          <div>2017</div>
+          <div><a href="https://enryco.github.io/free-bugs/">{free bugs}</a></div>
+          <div>project for the <a href="https://codingdavinci.de/">{coding da vinci}</a> hackathon</div>
+          <div>tech: react</div>
+      `,
+      image: `${process.env.PUBLIC_URL}/assets/free-bugs.png`
     },
     {
       title: 'mh hub',
@@ -98,26 +110,22 @@ const content = {
       type: 'about',
       date: '2017-03-23T12:00:00',
       content: `
-      <div style="display: flex;">
-      <div style="flex: 2">
-      <div>After studying mechanical engineering i decided to specialize in programming, building software products and becoming an entrepreneur.</div>
-      <div>I love solving complex problems and developing products.</div>
-      </div>
-      <div style="flex: 1;">
-      <img style="border-radius: 0%; width:100px; float: right;" src="${process.env.PUBLIC_URL}/assets/IMG_1517_xs.jpg" alt=""/>
-      </div>
-      </div>
-    `
+          <i>I do</i>
+          <div> JavaScrpt, HTML, CSS, React, React Native, Expo, Firebase, Software Architecture, NodeJS, Server, DevOps, CI/CD, APIs</div>
+          <i>Short Bio:</i>
+          <div>After studying mechanical engineering where I coded also lots of stuff (Simulations) in <code>C</code> and <code>Matlab</code>  I decided to specialize in programming, building software products and becoming an entrepreneur.</div>
+          <div>I love solving complex problems and developing products.</div>`,
+      image: `${process.env.PUBLIC_URL}/assets/IMG_1517_xs.jpg`
     },
     {
       title: 'contact',
       type: 'about',
       date: '2017-03-22T12:00:00',
       content: `<div>Enrico Scherlies</div>
-    <div><a href="mailto:contact@enricoscherlies.com">contact@enricoscherlies.com</a></div>
+    <div><a href='&#109;ail&#116;o&#58;c&#37;6F&#110;t&#97;ct%40en%72i&#99;osc&#104;&#101;%&#55;2%&#54;Ci&#101;%73&#37;2E&#99;o&#37;&#54;D'>con&#116;a&#99;t&#64;&#101;nrico&#115;&#99;h&#101;&#114;lie&#115;&#46;co&#109;</a></div>
     <div>+49 160 991 666 13</div>
-    <div>Schwedenstr. 5</div>
-    <div>13357 Berlin</div>
+    <div>Straße vor Schönholz 25</div>
+    <div>13158 Berlin</div>
     <div>Germany</div>
     `,
     }
