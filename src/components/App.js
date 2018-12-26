@@ -3,13 +3,12 @@ import request from 'request'
 import Header from './Header'
 import Content from './Content'
 import _ from 'lodash'
-
-import content from '../assets/content'
+import firebaseApp from '../firebase';
 
 class App extends Component {
 
   state = {
-    projects: content.entries,
+    projects: [],
     gists: null,
     showOnly: 0,
     categories: [
@@ -23,6 +22,15 @@ class App extends Component {
   }
 
   componentDidMount() {
+
+    firebaseApp.database().ref().once('value').then(snap => {
+      const data = snap.val()
+      if (data) {
+        const projects = _.map(data.posts, post => post.fields)
+        this.setState({ projects })
+      }
+    })
+
     const options = {
       url: 'https://api.github.com/users/enryco/gists',
       headers: {
@@ -85,8 +93,8 @@ class App extends Component {
           categories={this.state.categories}
           filter={this.state.filter}
           handleFilterClick={this.handleFilterClick}
-          setContentOffset={contentOffset => this.setState({contentOffset})}
-          />
+          setContentOffset={contentOffset => this.setState({ contentOffset })}
+        />
         {
           posts && <Content
             contentOffset={this.state.contentOffset}
