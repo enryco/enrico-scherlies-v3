@@ -20,7 +20,7 @@ class Content extends Component {
               title={post.title}
               type={post.type}
               content={post.content}
-              image={_.get(post, 'image.0.url')}
+              image={_.get(post, 'image.0.mediaLink')}
             />
           })
         }
